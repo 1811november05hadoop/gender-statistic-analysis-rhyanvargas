@@ -22,8 +22,6 @@ public class FemaleGradsReducer extends Reducer<Text, DoubleWritable, Text, Doub
                 sum = 0,
                 averageBelow30Percent = 0,
                 numYears = 6; // represents number of years of percentages tracked
-                
-        String regex = "\\d{1,2}\\.\\d{1,2}";
 
         for (DoubleWritable value : values) {
              sum += value.get();
