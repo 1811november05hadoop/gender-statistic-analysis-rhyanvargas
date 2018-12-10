@@ -1,32 +1,39 @@
-// package main.java.com.revature.reduce;
+package com.revature.reduce;
 
-// import org.apache.hadoop.io.IntWritable;
-// import org.apache.hadoop.io.Text;
-// import org.apache.hadoop.mapreduce.Partitioner;
+import java.io.IOException;
+import java.text.DecimalFormat;
 
-// /**
-//  * FemaleGradsReducer
-//  */
-// public class FemaleGradsReducer extends Partitioner<Text, IntWritable> {
+import org.apache.hadoop.io.DoubleWritable;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+import java.util.regex.Pattern;
 
-//     private static char FIRST_SECTION_END = "World";
-//     private static char SECOND_SECTION_START = "Afghanistan";
+/**
+ * FemaleGradsReducer
+ */
+public class FemaleGradsReducer extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
+   
+    public void reduce(Text key, Iterable<DoubleWritable> values, Context context)
+            throws IOException, InterruptedException {
 
-//     @Override
-//     public int getPartition(Text key, IntWritable value, int numReduceTask) {
-//         char firstCharacter = key.toString().charAt(0);
+        double  average = 0,
+                sum = 0,
+                averageBelow30Percent = 0,
+                numYears = 6; // represents number of years of percentages tracked
+                
+        String regex = "\\d{1,2}\\.\\d{1,2}";
 
-//         if (firstCharacter <= FIRST_SECTION_END) {
-//             // Send it to the first reducer
-//             return 0;
-//         } else if (firstCharacter >= SECOND_SECTION_START &&
-//         // Send it to the second reducer
-//                 firstCharacter <= SECOND_SECTION_END) {
-//             return 1;
-//         } else {
-//             // Send it to the third reducer
-//             return 2;
-//         }
-//     }
-
-// }
+        for (DoubleWritable value : values) {
+             sum += value.get();
+        }
+        average = (sum / numYears);
+        if (average < 30) {
+            averageBelow30Percent = average;
+            averageBelow30Percent = Double.parseDouble(new DecimalFormat("##.####").format(averageBelow30Percent));
+        }
+        context.write(key, new DoubleWritable(averageBelow30Percent));
+    }
+    
+}

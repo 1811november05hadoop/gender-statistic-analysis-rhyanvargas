@@ -1,8 +1,9 @@
 package com.revature;
 
 import com.revature.map.FemaleGradsMapper;
-// import com.revature.reduce.*;
+import com.revature.reduce.FemaleGradsReducer;
 
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.Text;
@@ -16,10 +17,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  *
  */
 public class GenderStatisticsAnalysis {
-
-	// public static class FemaleGradsReduce extends Reducer<Text, IntWritable,
-	// Text, IntWritable> {
-	// }
 
 	public static void main(String[] args) throws Exception {
 		if (args.length != 2) {
@@ -42,7 +39,7 @@ public class GenderStatisticsAnalysis {
 
 			// Specify mapper and reducer class
 			job.setMapperClass(FemaleGradsMapper.class);
-			// job.setReducerClass(WordCountReducer.class);
+			job.setReducerClass(FemaleGradsReducer.class);
 
 			// Partitioner class
 			// job.setPartitionerClass(AlphabetPartitioner.class);
