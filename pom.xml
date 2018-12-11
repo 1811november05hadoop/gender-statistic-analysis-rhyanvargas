@@ -14,7 +14,7 @@
 
   <build>
     <!-- Change name of jar to keep it simple -->
-  	<finalName>WordCountCombiner</finalName>
+  	<finalName>GenderStaticsAnalysis</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

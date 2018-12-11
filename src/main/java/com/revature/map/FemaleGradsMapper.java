@@ -32,7 +32,7 @@ public class FemaleGradsMapper extends Mapper<LongWritable, Text, Text, DoubleWr
                 }
                 else {
                     // Double check if 55 is 6 years of info 
-                    if (index > 55 && !word.equals("") && flag == true) {
+                    if (index > 57 && !word.equals("") && flag == true) {
                         percent = Double.parseDouble(word);
                         context.write(new Text(country), new DoubleWritable(percent));
                     }

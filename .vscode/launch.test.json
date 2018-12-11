@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "WordCountCombiner0.1",
+                "projectName": "WordCountCombiner0.1",
+                "workingDirectory": "/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "WordCountCombiner0.1",
+                "projectName": "WordCountCombiner0.1",
+                "workingDirectory": "/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

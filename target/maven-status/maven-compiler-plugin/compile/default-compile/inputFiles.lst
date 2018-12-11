@@ -1,3 +1,6 @@
 /Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/map/FemaleGradsMapper.java
+/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/AverageIncreaseFemales.java
 /Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/reduce/FemaleGradsReducer.java
-/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/GenderStatisticsAnalysis.java
+/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/reduce/AverageIncreaseFemalesReducer.java
+/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/FemaleGrads.java
+/Users/rhyanvargas/Revature/gender-statistic-analysis-rhyanvargas/src/main/java/com/revature/map/AverageIncreaseFemalesMapper.java
