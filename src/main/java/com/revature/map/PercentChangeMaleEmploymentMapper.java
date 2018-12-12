@@ -9,7 +9,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 /**
- * Contains logic of Mapper for Percent Change in Male employment in the * from the year 2000.
+ * Contains logic of Mapper for Percent Change in Male employment from the year
+ * 2000-2016
  */
 public class PercentChangeMaleEmploymentMapper extends Mapper<LongWritable, Text, Text, DoubleWritable> {
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {

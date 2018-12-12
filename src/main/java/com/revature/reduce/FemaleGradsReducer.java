@@ -8,7 +8,8 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import java.util.regex.Pattern;
+
+import com.revature.helpers.FormatDecimal;
 
 /**
  * FemaleGradsReducer
@@ -29,7 +30,7 @@ public class FemaleGradsReducer extends Reducer<Text, DoubleWritable, Text, Doub
         average = (sum / numYears);
         if (average < 30) {
             averageBelow30Percent = average;
-            averageBelow30Percent = Double.parseDouble(new DecimalFormat("##.####").format(averageBelow30Percent));
+            averageBelow30Percent = FormatDecimal.formatDecimal(averageBelow30Percent);
         }
         context.write(key, new DoubleWritable(averageBelow30Percent));
     }

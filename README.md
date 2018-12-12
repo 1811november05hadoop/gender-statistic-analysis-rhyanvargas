@@ -36,5 +36,21 @@ You must find the answers through the development Map Reduce algorithms for the 
 - Deciding on what type of data to use
 - Whether or not to clean the null values, to prevent inaccurate results
 ### What I Learned
+- Assigning a variable to the last value of an enhanced for loop without transforming the `Iterable` into an array list.
+```
+ for(DoubleWritable value : values){
+            if(index == 0) {
+                firstYearPercentage = value.get();
+            } else {
+				/**
+				* Will keep re-assigning variable until the end of
+				* the values list. the final assignment represents 
+				* the last percentage value we want.
+				*/
+                lastYearPercentage = value.get(); 
+            }
+            index += 1;
+        }
+```
 #### Process
 - I learned that it is really important to look at the data and figure out which variables you want to extract before coding your mapper

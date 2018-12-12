@@ -6,6 +6,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.revature.helpers.FormatDecimal;
 /**
  * Contains logic of Reducer for average increase in female education in the U.S. from the year 2000. AverageMap
  */
@@ -65,7 +67,7 @@ public class AverageIncreaseFemalesReducer extends Reducer<Text, DoubleWritable,
         /**
          * Calculate the Average Sum Percent increase
          */
-        averageOfSums = Double.parseDouble(new DecimalFormat("##.###").format(averageOfSums));
+        averageOfSums = FormatDecimal.formatDecimal(averageOfSums);
         context.write(key, new DoubleWritable(averageOfSums));
     }
 }
