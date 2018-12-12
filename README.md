@@ -5,7 +5,7 @@ This project deals with identifying the gender factor in higher education aligne
 You must find the answers through the development Map Reduce algorithms for the following 
 ### Business Questions:
 	- [X]	Identify the countries where % of female graduates is less than 30%. 
-	- []	List the average increase in female education in the U.S. from the year 2000.
+	- [X]	List the average increase in female education in the U.S. from the year 2000.
 	- [ ]	List the % of change in male employment from the year 2000. 
 	- [ ]	List the % of change in female employment from the year 2000.
 	- [ ]	Additionally, based on your data exploration and analysis, evaluate one business factor that you consider important, and make this your own requirement.
