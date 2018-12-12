@@ -36,3 +36,5 @@ You must find the answers through the development Map Reduce algorithms for the 
 - Deciding on what type of data to use
 - Whether or not to clean the null values, to prevent inaccurate results
 ### What I Learned
+#### Process
+- I learned that it is really important to look at the data and figure out which variables you want to extract before coding your mapper
