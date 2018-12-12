@@ -29,3 +29,10 @@ You must find the answers through the development Map Reduce algorithms for the 
 	•	It’s important to share thoughts and debate with your colleagues, but keep this as a very individual project, because you will only get the most exposure by trying to fix issues yourself in the first place.
 	•	You must show the analysis results in your presentation plus any findings, and you will also be asked to run any of these Map Reduce jobs, live.
 	•	Project must be presented on Friday of Week 5.
+# My Project Questions/Comments/Findings
+### Questions
+- 
+### Challenges Faced
+- Deciding on what type of data to use
+- Whether or not to clean the null values, to prevent inaccurate results
+### What I Learned
