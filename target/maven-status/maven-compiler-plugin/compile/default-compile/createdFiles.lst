@@ -1,1 +1,9 @@
+com/revature/AverageIncreaseFemales.class
+com/revature/reduce/FemaleGradsReducer.class
+com/revature/reduce/PercentChangeMaleEmploymentReducer.class
+com/revature/FemaleGrads.class
+com/revature/map/AverageIncreaseFemalesMapper.class
+com/revature/map/PercentChangeMaleEmploymentMapper.class
+com/revature/reduce/AverageIncreaseFemalesReducer.class
+com/revature/PercentChangeMaleEmployment.class
 com/revature/map/FemaleGradsMapper.class
