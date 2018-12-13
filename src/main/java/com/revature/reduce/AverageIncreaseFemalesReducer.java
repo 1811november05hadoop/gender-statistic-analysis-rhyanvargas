@@ -63,7 +63,7 @@ public class AverageIncreaseFemalesReducer extends Reducer<Text, DoubleWritable,
         /**
          * Calculate the Average Sum Percent increase
          */
-        averageOfSums = sumOfPercentChanges / RANGE_OF_YEARS;
+        averageOfSums = sumOfPercentChanges / percentChangeArray.size();
         /**
          * Calculate the Average Sum Percent increase
          */

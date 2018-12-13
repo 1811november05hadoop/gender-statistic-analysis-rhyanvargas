@@ -60,7 +60,7 @@ public class PercentChangeMaleEmploymentMapper extends Mapper<LongWritable, Text
                 "Wallis and Futuna Islands", "Western Sahara", "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"));
         
         /**
-         * Fetch Gross graduation ratio of Females
+         * Fetch Male Employment From all countries
          */
         if (line.matches("(.*)SL.EMP.WORK.MA.ZS(.*)")) {
             for (String word : line.split(",")) {
