@@ -5,8 +5,8 @@ This project deals with identifying the gender factor in higher education aligne
 You must find the answers through the development Map Reduce algorithms for the following 
 ### Business Questions:
 	- [X]	Identify the countries where % of female graduates is less than 30%. 
-	- []	List the average increase in female education in the U.S. from the year 2000.
-	- [ ]	List the % of change in male employment from the year 2000. 
+	- [X]	List the average increase in female education in the U.S. from the year 2000.
+	- []	List the % of change in male employment from the year 2000. 
 	- [ ]	List the % of change in female employment from the year 2000.
 	- [ ]	Additionally, based on your data exploration and analysis, evaluate one business factor that you consider important, and make this your own requirement.
 ### For each business question, there is the following architectural requirements:
@@ -29,3 +29,28 @@ You must find the answers through the development Map Reduce algorithms for the 
 	•	It’s important to share thoughts and debate with your colleagues, but keep this as a very individual project, because you will only get the most exposure by trying to fix issues yourself in the first place.
 	•	You must show the analysis results in your presentation plus any findings, and you will also be asked to run any of these Map Reduce jobs, live.
 	•	Project must be presented on Friday of Week 5.
+# My Project Questions/Comments/Findings
+### Questions
+- 
+### Challenges Faced
+- Deciding on what type of data to use
+- Whether or not to clean the null values, to prevent inaccurate results
+### What I Learned
+- Assigning a variable to the last value of an enhanced for loop without transforming the `Iterable` into an array list.
+```
+ for(DoubleWritable value : values){
+            if(index == 0) {
+                firstYearPercentage = value.get();
+            } else {
+				/**
+				* Will keep re-assigning variable until the end of
+				* the values list. the final assignment represents 
+				* the last percentage value we want.
+				*/
+                lastYearPercentage = value.get(); 
+            }
+            index += 1;
+        }
+```
+#### Process
+- I learned that it is really important to look at the data and figure out which variables you want to extract before coding your mapper

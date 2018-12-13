@@ -1,24 +1,22 @@
 package com.revature;
-import com.revature.map.AverageIncreaseFemalesMapper;
-import com.revature.reduce.AverageIncreaseFemalesReducer;
+import com.revature.map.PercentChangeMaleEmploymentMapper;
+import com.revature.reduce.PercentChangeMaleEmploymentReducer;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.Text;
-
+    
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
 /**
- * Average Increase of Female Education from Year 2000
- *
+ * PercentChangeMaleEmployment
  */
-public class AverageIncreaseFemales {
+public class PercentChangeMaleEmployment {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.out.println("Usage: AverageIncreaseFemales <input_dir> <output_dir>");
+            System.out.println("Usage: PercentChangeMaleEmployment <input_dir> <output_dir>");
             System.exit(-1);
         }
         else {
@@ -29,9 +27,9 @@ public class AverageIncreaseFemales {
             /**
              * The class that contains the main() method
              */
-            job.setJarByClass(AverageIncreaseFemales.class);
+            job.setJarByClass(PercentChangeMaleEmployment.class);
 
-            job.setJobName("Average Increase of Female Education");
+            job.setJobName("Percent Change of Male Employment");
             /**
              * Set input and output paths
              */
@@ -40,8 +38,8 @@ public class AverageIncreaseFemales {
             /**
              * Specify mapper and reducer class
              */
-            job.setMapperClass(AverageIncreaseFemalesMapper.class);
-            job.setReducerClass(AverageIncreaseFemalesReducer.class);
+            job.setMapperClass(PercentChangeMaleEmploymentMapper.class);
+            job.setReducerClass(PercentChangeMaleEmploymentReducer.class);
             /**
              * specify
              */

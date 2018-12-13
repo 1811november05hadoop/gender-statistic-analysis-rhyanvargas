@@ -5,7 +5,8 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 /**
- * Contains logic of Mapper for average increase in female education in the U.S. from the year 2000. AverageMap
+ * Contains logic of Mapper for average increase in female 
+ * education in the U.S. from the year 2000.
  */
 public class AverageIncreaseFemalesMapper extends Mapper<LongWritable, Text, Text, DoubleWritable> {
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {

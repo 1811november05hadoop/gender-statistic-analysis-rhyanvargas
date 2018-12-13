@@ -1,0 +1,133 @@
+Albania	2.04
+Algeria	-30.13
+Argentina	-1.64
+Armenia	-4.84
+Aruba	-1.51
+Australia	3.88
+Austria	-0.67
+Azerbaijan	2.9
+Bahamas	2.03
+Bahrain	-97.97
+Bangladesh	12.63
+Barbados	-2.67
+Belarus	-93.53
+Belgium	0.89
+Belize	4.4
+Benin	-12.53
+Bermuda	-3.55
+Bhutan	-15.15
+Bolivia	4.24
+Botswana	-6.11
+Brazil	1.49
+Bulgaria	4.23
+Burkina Faso	-8.05
+Burundi	-8.48
+Cambodia	13.72
+Cameroon	-28.64
+Canada	0.48
+Cayman Islands	-0.28
+Chile	7.58
+Colombia	-5.57
+Costa Rica	5.37
+Cote d'Ivoire	-25.17
+Cuba	-20.53
+Cyprus	10.59
+Czech Republic	-0.78
+Denmark	-0.28
+Dominican Republic	1.27
+Ecuador	0.93
+Egypt	0.65
+El Salvador	0.84
+Estonia	-0.75
+Ethiopia	-2.22
+Fiji	0.84
+Finland	-2.12
+France	-0.22
+French Polynesia	-78.73
+Gabon	-69.11
+Gambia	-30.59
+Georgia	6.2
+Germany	-0.04
+Ghana	7.47
+Greece	-0.21
+Guatemala	2.62
+Haiti	-13.6
+Honduras	-0.81
+Hungary	3.46
+Iceland	3.03
+Indonesia	-6.15
+Ireland	-0.45
+Israel	1.35
+Italy	2.51
+Jamaica	-1.41
+Japan	1.89
+Jordan	-82.25
+Kazakhstan	4.26
+Kiribati	-52.1
+Kuwait	-96.58
+Latvia	-2.69
+Lebanon	0.16
+Lesotho	-83.31
+Liberia	-27.31
+Lithuania	0.24
+Luxembourg	-1.2
+Madagascar	-4.83
+Malaysia	0.78
+Maldives	2.76
+Mali	-2.79
+Malta	-0.64
+Mauritius	-1.59
+Mexico	3.43
+Mongolia	8.53
+Morocco	7.6
+Namibia	-3.54
+Netherlands	-3.71
+New Zealand	3.21
+Nicaragua	3.31
+Norway	0.06
+Oman	-96.49
+Pakistan	-0.8
+Panama	1.79
+Paraguay	7.09
+Peru	-7.74
+Philippines	-1.34
+Poland	-0.12
+Portugal	7.22
+Puerto Rico	-3.6
+Qatar	0.9
+Romania	4.11
+Russian Federation	0.16
+Rwanda	-13.08
+Samoa	0.0
+San Marino	0.0
+Sao Tome and Principe	6.75
+Saudi Arabia	2.15
+Senegal	-28.64
+Seychelles	-4.9
+Sierra Leone	-11.29
+Singapore	1.09
+Slovenia	0.14
+South Africa	0.78
+Spain	0.08
+Sri Lanka	-0.14
+Suriname	-0.35
+Sweden	0.49
+Switzerland	0.11
+Syrian Arab Republic	1.68
+Tajikistan	-47.45
+Thailand	1.64
+Trinidad and Tobago	-1.19
+Tunisia	-0.06
+Turkey	2.91
+Turks and Caicos Islands	8.22
+Tuvalu	-95.45
+Uganda	2.55
+Ukraine	0.33
+United Arab Emirates	-1.55
+United Kingdom	-0.53
+United States	1.03
+Uruguay	2.91
+Vanuatu	-29.36
+Venezuela	0.41
+Vietnam	20.23
+Zimbabwe	-18.62
